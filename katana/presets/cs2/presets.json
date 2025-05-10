@@ -1,0 +1,15 @@
+{
+  "presets": {
+    "720p_low": "720p Low Settings",
+    "720p_medium": "720p Medium Settings",
+    "720p_high": "720p High Settings",
+    "1080p_low": "1080p Low Settings",
+    "1080p_medium": "1080p Medium Settings",
+    "1080p_high": "1080p High Settings",
+    "1440p_medium": "1440p Medium Settings",
+    "1440p_high": "1440p High Settings",
+    "4k_medium": "4K Medium Settings",
+    "4k_high": "4K High Settings"
+  },
+  "default": "1080p_high"
+}
