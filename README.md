@@ -15,7 +15,7 @@ PyGetWindow
 Colorama
 Installation
 bash
-# Clone the repository
+# Clone the repository*
 git clone https://github.com/intel-gaming/katana.git
 cd katana
 
