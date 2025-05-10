@@ -24,8 +24,6 @@ Katana is a modular, extensible framework for automating game benchmarks. It pro
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/intel-gaming/katana.git
 cd katana
 
 # Install dependencies
