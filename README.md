@@ -179,6 +179,3 @@ Benchmark results are saved as JSON files in the `results` directory. Each run g
 
 Screenshots of benchmark results are saved in the `results/screenshots` directory.
 
-## License
-
-Copyright © 2025 Intel Corporation. All rights reserved.
