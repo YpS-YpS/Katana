@@ -1,0 +1,1136 @@
+2025-05-09 01:57:16,291 - ERROR -  - play_tab.png
+2025-05-09 01:57:16,291 - ERROR -  - workshop_tab.png
+2025-05-09 01:57:16,291 - ERROR -  - cs2_fps_benchmark.png
+2025-05-09 01:57:16,292 - ERROR -  - go_button.png
+2025-05-09 01:57:16,292 - ERROR -  - benchmark_first_frame.png
+2025-05-09 01:57:16,292 - ERROR -  - benchmark_end_screen.png
+2025-05-09 01:57:16,292 - ERROR -  - power_button.png
+2025-05-09 01:57:16,292 - ERROR -  - quit_button.png
+2025-05-09 01:58:49,733 - ERROR -  - play_tab.png
+2025-05-09 01:58:49,733 - ERROR -  - workshop_tab.png
+2025-05-09 01:58:49,734 - ERROR -  - cs2_fps_benchmark.png
+2025-05-09 01:58:49,734 - ERROR -  - go_button.png
+2025-05-09 01:58:49,734 - ERROR -  - benchmark_first_frame.png
+2025-05-09 01:58:49,734 - ERROR -  - benchmark_end_screen.png
+2025-05-09 01:58:49,734 - ERROR -  - power_button.png
+2025-05-09 01:58:49,734 - ERROR -  - quit_button.png
+2025-05-09 02:02:03,684 - ERROR -  - play_tab.png
+2025-05-09 02:02:03,684 - ERROR -  - workshop_tab.png
+2025-05-09 02:02:03,684 - ERROR -  - cs2_fps_benchmark.png
+2025-05-09 02:02:03,684 - ERROR -  - go_button.png
+2025-05-09 02:02:03,684 - ERROR -  - benchmark_first_frame.png
+2025-05-09 02:02:03,684 - ERROR -  - benchmark_end_screen.png
+2025-05-09 02:02:03,685 - ERROR -  - power_button.png
+2025-05-09 02:02:03,685 - ERROR -  - quit_button.png
+2025-05-09 02:05:57,540 - ERROR -  - play_tab.png
+2025-05-09 02:05:57,540 - ERROR -  - workshop_tab.png
+2025-05-09 02:05:57,540 - ERROR -  - cs2_fps_benchmark.png
+2025-05-09 02:05:57,540 - ERROR -  - go_button.png
+2025-05-09 02:05:57,540 - ERROR -  - benchmark_first_frame.png
+2025-05-09 02:05:57,541 - ERROR -  - benchmark_end_screen.png
+2025-05-09 02:05:57,541 - ERROR -  - power_button.png
+2025-05-09 02:05:57,541 - ERROR -  - quit_button.png
+2025-05-09 02:08:00,980 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 02:08:01,116 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 02:08:01,117 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 02:08:01,117 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 02:08:01,117 - ERROR - ❌ Missing asset files:
+2025-05-09 02:08:01,117 - ERROR -  - play_tab.png
+2025-05-09 02:08:01,117 - ERROR -  - workshop_tab.png
+2025-05-09 02:08:01,117 - ERROR -  - cs2_fps_benchmark.png
+2025-05-09 02:08:01,117 - ERROR -  - go_button.png
+2025-05-09 02:08:01,117 - ERROR -  - benchmark_first_frame.png
+2025-05-09 02:08:01,117 - ERROR -  - benchmark_end_screen.png
+2025-05-09 02:08:01,117 - ERROR -  - power_button.png
+2025-05-09 02:08:01,118 - ERROR -  - quit_button.png
+2025-05-09 02:08:01,118 - ERROR - 📂 Please place all assets in: C:\Katana\katana\games\730\assets
+2025-05-09 02:08:01,118 - INFO - 📦 ======= Starting Counter-Strike 2 Benchmark Series ========
+2025-05-09 02:08:01,118 - INFO - 📌 Config -> Total Runs: 4, Cooldown: 120s
+2025-05-09 02:08:01,118 - INFO - 
+⏱️ ===== Starting Run 0 (Duration Measurement) =====
+2025-05-09 02:08:01,118 - INFO - 📊 ===== Starting Run 0 (Dry Run) =====
+2025-05-09 02:08:01,118 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 02:08:41,131 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 02:08:51,390 - ERROR - ❌ No window with title 'Counter-Strike 2' found
+2025-05-09 02:08:51,390 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 02:08:51,390 - INFO - ⌨️ Pressing key: esc (2 times)
+2025-05-09 02:08:53,502 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 02:08:53,507 - ERROR - ❌ Template not found: play_tab.png
+2025-05-09 02:13:05,962 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 02:13:05,966 - ERROR - ❌ Error creating benchmark for game 'cs2': expected an indented block after function definition on line 21 (benchmark.py, line 22)
+2025-05-09 02:13:05,966 - ERROR - ❌ Error during benchmark execution: expected an indented block after function definition on line 21 (benchmark.py, line 22)
+2025-05-09 02:13:05,975 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\main.py", line 157, in main
+    benchmark = GameFactory.create_benchmark(game_id)
+  File "C:\Katana\katana\factory.py", line 48, in create_benchmark
+    module = importlib.import_module(module_path)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Katana\katana\games\cs2\benchmark.py", line 22
+    """Initialize the CS2 benchmark"""
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 21
+
+2025-05-09 02:13:41,645 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 02:13:41,647 - ERROR - ❌ Error creating benchmark for game 'cs2': expected an indented block after function definition on line 21 (benchmark.py, line 22)
+2025-05-09 02:13:41,647 - ERROR - ❌ Error during benchmark execution: expected an indented block after function definition on line 21 (benchmark.py, line 22)
+2025-05-09 02:13:41,648 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\main.py", line 157, in main
+    benchmark = GameFactory.create_benchmark(game_id)
+  File "C:\Katana\katana\factory.py", line 48, in create_benchmark
+    module = importlib.import_module(module_path)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Katana\katana\games\cs2\benchmark.py", line 22
+    """Initialize the CS2 benchmark"""
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 21
+
+2025-05-09 02:14:23,207 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 02:14:23,343 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 02:14:23,344 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 02:14:23,344 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 02:14:23,344 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 02:14:23,345 - INFO - 📦 ======= Starting Counter-Strike 2 Benchmark Series ========
+2025-05-09 02:14:23,345 - INFO - 📌 Config -> Total Runs: 4, Cooldown: 120s
+2025-05-09 02:14:23,345 - INFO - 
+⏱️ ===== Starting Run 0 (Duration Measurement) =====
+2025-05-09 02:14:23,345 - INFO - 📊 ===== Starting Run 0 (Dry Run) =====
+2025-05-09 02:14:23,345 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 02:15:03,364 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 02:15:04,370 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 02:15:04,371 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 02:15:04,371 - INFO - ⌨️ Pressing key: esc (2 times)
+2025-05-09 02:15:06,497 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 02:15:06,646 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 02:15:06,648 - INFO - ✅ Found play_tab.png after 0.2s
+2025-05-09 02:15:06,648 - INFO - ✅ Main screen detected
+2025-05-09 02:15:06,648 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 02:15:06,648 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 02:15:06,648 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 02:15:06,756 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 02:15:06,758 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 02:15:07,851 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 02:15:07,852 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 02:15:07,983 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:15:07,984 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 02:15:07,985 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 02:15:08,103 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:15:08,105 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 02:15:09,210 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 02:15:09,211 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 02:15:09,343 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:15:09,345 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 02:15:09,345 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 02:15:09,464 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:15:09,466 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 02:15:10,567 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 02:15:10,568 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 02:15:10,689 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:15:10,691 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 02:15:10,691 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 02:15:10,803 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:15:10,805 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 02:15:11,907 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 02:15:11,908 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 02:15:12,011 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:15:13,114 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:15:14,244 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:15:15,376 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:15:16,508 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:15:17,739 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:15:18,880 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:15:20,001 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:15:21,125 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:15:22,242 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:15:23,355 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:15:24,471 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:15:25,602 - INFO - ✅ Match found for benchmark_first_frame.png at (1087, 524) with confidence 0.89
+2025-05-09 02:15:25,604 - INFO - ✅ Found benchmark_first_frame.png after 13.7s
+2025-05-09 02:15:25,604 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 02:15:25,604 - INFO - 📥 [Run 0] Capturing benchmark results...
+2025-05-09 02:15:25,604 - INFO - ⏳ Waiting for benchmark_end_screen.png (timeout: 120s)...
+2025-05-09 02:15:25,737 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:15:28,890 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.69)
+2025-05-09 02:15:32,026 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 02:15:35,159 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.59)
+2025-05-09 02:15:38,298 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:15:41,420 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:15:44,545 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.47)
+2025-05-09 02:15:47,677 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.67)
+2025-05-09 02:15:50,819 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:15:53,955 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 02:15:57,088 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.69)
+2025-05-09 02:16:00,228 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.35)
+2025-05-09 02:16:03,360 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.40)
+2025-05-09 02:16:06,501 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:16:09,640 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 02:16:12,777 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 02:16:15,904 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 02:16:19,020 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 02:16:22,140 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 02:16:25,269 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.73)
+2025-05-09 02:16:28,391 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:16:31,513 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:16:34,648 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:16:37,795 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.67)
+2025-05-09 02:16:40,910 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.61)
+2025-05-09 02:16:44,041 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 02:16:47,188 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 02:16:50,329 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.71)
+2025-05-09 02:16:53,451 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 02:16:56,569 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 02:16:59,704 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.59)
+2025-05-09 02:17:02,839 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 02:17:05,966 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 02:17:09,101 - INFO - ✅ Match found for benchmark_end_screen.png at (1490, 506) with confidence 0.85
+2025-05-09 02:17:09,105 - INFO - ✅ Found benchmark_end_screen.png after 103.5s
+2025-05-09 02:17:09,106 - INFO - ⏱️ [Run 0] Benchmark duration: 103.50 seconds
+2025-05-09 02:17:16,206 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run0_20250509_021716.png
+2025-05-09 02:17:16,207 - INFO - ⏱️ Measured benchmark duration: 103.50 seconds
+2025-05-09 02:17:16,207 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 02:17:26,218 - INFO - 🗙 Toggling console off...
+2025-05-09 02:17:26,223 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 02:17:27,445 - INFO - 🔋 Clicking the power icon...
+2025-05-09 02:17:30,454 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 02:17:30,574 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:17:30,577 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 02:17:30,577 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 02:17:30,687 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:17:30,689 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 02:17:33,805 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 02:17:33,814 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 02:17:33,931 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:17:33,934 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 02:17:33,934 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 02:17:34,044 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:17:34,045 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 02:17:35,138 - INFO - ✅ CS2 exited
+2025-05-09 02:17:40,205 - INFO - ✅ Results saved to: results\730_run0_20250509_021525.json
+2025-05-09 02:17:40,205 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 02:19:40,208 - INFO - 📊 ===== Starting Run 1  =====
+2025-05-09 02:19:40,214 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 02:20:20,227 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 02:20:21,229 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 02:20:21,230 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 02:20:21,230 - INFO - ⌨️ Pressing key: esc (2 times)
+2025-05-09 02:20:23,356 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 02:20:23,471 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 02:20:23,473 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 02:20:23,473 - INFO - ✅ Main screen detected
+2025-05-09 02:20:23,473 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 02:20:23,473 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 02:20:23,473 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 02:20:23,582 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 02:20:23,583 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 02:20:24,679 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 02:20:24,680 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 02:20:24,802 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:20:24,804 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 02:20:24,804 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 02:20:24,921 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:20:24,923 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 02:20:26,016 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 02:20:26,017 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 02:20:26,138 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:20:26,140 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 02:20:26,140 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 02:20:26,262 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:20:26,264 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 02:20:27,355 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 02:20:27,356 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 02:20:27,465 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:20:27,467 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 02:20:27,467 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 02:20:27,580 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:20:27,582 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 02:20:28,674 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 02:20:28,675 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 02:20:28,774 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:20:29,882 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:20:30,994 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:20:32,119 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:20:33,264 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:20:34,421 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:20:35,544 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:20:36,661 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:20:37,786 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:20:38,903 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:20:40,022 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:20:41,137 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:20:42,265 - INFO - ✅ Match found for benchmark_first_frame.png at (1091, 528) with confidence 0.89
+2025-05-09 02:20:42,268 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 02:20:42,268 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 02:20:42,268 - INFO - 📥 [Run 1] Capturing benchmark results...
+2025-05-09 02:20:42,268 - INFO - 📥 [Run 1] Timed collection: sleeping for 103.50s + 7s buffer...
+2025-05-09 02:22:32,830 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run1_20250509_022232.png
+2025-05-09 02:22:32,831 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 02:22:42,838 - INFO - 🗙 Toggling console off...
+2025-05-09 02:22:42,839 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 02:22:44,062 - INFO - 🔋 Clicking the power icon...
+2025-05-09 02:22:47,069 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 02:22:47,179 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:22:47,181 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 02:22:47,181 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 02:22:47,296 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:22:47,297 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 02:22:50,402 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 02:22:50,403 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 02:22:50,515 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:22:50,518 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 02:22:50,518 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 02:22:50,625 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:22:50,627 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 02:22:51,725 - INFO - ✅ CS2 exited
+2025-05-09 02:22:56,966 - INFO - ✅ Results saved to: results\730_run1_20250509_022042.json
+2025-05-09 02:22:56,967 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 02:24:56,972 - INFO - 📊 ===== Starting Run 2  =====
+2025-05-09 02:24:56,974 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 02:25:36,988 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 02:25:37,998 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 02:25:37,999 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 02:25:37,999 - INFO - ⌨️ Pressing key: esc (2 times)
+2025-05-09 02:25:40,123 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 02:25:40,243 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 02:25:40,245 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 02:25:40,245 - INFO - ✅ Main screen detected
+2025-05-09 02:25:40,245 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 02:25:40,245 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 02:25:40,245 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 02:25:40,359 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 02:25:40,360 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 02:25:41,457 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 02:25:41,458 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 02:25:41,578 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:25:41,580 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 02:25:41,580 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 02:25:41,701 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:25:41,703 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 02:25:42,801 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 02:25:42,801 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 02:25:42,925 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:25:42,926 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 02:25:42,926 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 02:25:43,047 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:25:43,048 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 02:25:44,138 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 02:25:44,139 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 02:25:44,252 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:25:44,253 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 02:25:44,253 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 02:25:44,361 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:25:44,362 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 02:25:45,461 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 02:25:45,461 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 02:25:45,556 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:25:46,660 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:25:47,760 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:25:48,878 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:25:50,015 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:25:51,126 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:25:52,261 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:25:53,394 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.75)
+2025-05-09 02:25:54,521 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:25:55,645 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.71)
+2025-05-09 02:25:56,769 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:25:57,889 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:25:59,025 - INFO - ✅ Match found for benchmark_first_frame.png at (1085, 529) with confidence 0.89
+2025-05-09 02:25:59,028 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 02:25:59,028 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 02:25:59,028 - INFO - 📥 [Run 2] Capturing benchmark results...
+2025-05-09 02:25:59,029 - INFO - 📥 [Run 2] Timed collection: sleeping for 103.50s + 7s buffer...
+2025-05-09 02:27:49,589 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run2_20250509_022749.png
+2025-05-09 02:27:49,590 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 02:27:59,606 - INFO - 🗙 Toggling console off...
+2025-05-09 02:27:59,607 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 02:28:00,830 - INFO - 🔋 Clicking the power icon...
+2025-05-09 02:28:03,840 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 02:28:03,949 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:28:03,952 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 02:28:03,952 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 02:28:04,064 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:28:04,065 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 02:28:07,175 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 02:28:07,176 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 02:28:07,285 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:28:07,287 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 02:28:07,287 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 02:28:07,396 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:28:07,398 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 02:28:08,506 - INFO - ✅ CS2 exited
+2025-05-09 02:28:13,757 - INFO - ✅ Results saved to: results\730_run2_20250509_022559.json
+2025-05-09 02:28:13,759 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 02:30:13,772 - INFO - 📊 ===== Starting Run 3  =====
+2025-05-09 02:30:13,776 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 02:30:53,792 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 02:30:54,797 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 02:30:54,797 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 02:30:54,798 - INFO - ⌨️ Pressing key: esc (2 times)
+2025-05-09 02:30:56,930 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 02:30:57,046 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 02:30:57,048 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 02:30:57,049 - INFO - ✅ Main screen detected
+2025-05-09 02:30:57,049 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 02:30:57,049 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 02:30:57,049 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 02:30:57,158 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 02:30:57,160 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 02:30:58,251 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 02:30:58,252 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 02:30:58,370 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:30:58,372 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 02:30:58,372 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 02:30:58,492 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:30:58,494 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 02:30:59,593 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 02:30:59,594 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 02:30:59,715 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:30:59,716 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 02:30:59,716 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 02:30:59,840 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:30:59,841 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 02:31:00,942 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 02:31:00,943 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 02:31:01,053 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:31:01,055 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 02:31:01,055 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 02:31:01,163 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:31:01,165 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 02:31:02,265 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 02:31:02,265 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 02:31:02,359 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:31:03,462 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:31:04,581 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:31:05,712 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:31:06,845 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:31:07,968 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:31:09,101 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:31:10,226 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:31:11,339 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:31:12,451 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:31:13,566 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:31:14,690 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:31:15,819 - INFO - ✅ Match found for benchmark_first_frame.png at (1085, 530) with confidence 0.88
+2025-05-09 02:31:15,822 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 02:31:15,822 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 02:31:15,822 - INFO - 📥 [Run 3] Capturing benchmark results...
+2025-05-09 02:31:15,822 - INFO - 📥 [Run 3] Timed collection: sleeping for 103.50s + 7s buffer...
+2025-05-09 02:33:06,380 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run3_20250509_023306.png
+2025-05-09 02:33:06,382 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 02:33:16,395 - INFO - 🗙 Toggling console off...
+2025-05-09 02:33:16,395 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 02:33:17,622 - INFO - 🔋 Clicking the power icon...
+2025-05-09 02:33:20,638 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 02:33:20,753 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:33:20,756 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 02:33:20,756 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 02:33:20,865 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:33:20,866 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 02:33:23,969 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 02:33:23,970 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 02:33:24,080 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:33:24,083 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 02:33:24,083 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 02:33:24,189 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:33:24,191 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 02:33:25,295 - INFO - ✅ CS2 exited
+2025-05-09 02:33:30,509 - INFO - ✅ Results saved to: results\730_run3_20250509_023115.json
+2025-05-09 02:33:30,511 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 02:35:30,524 - INFO - 📊 ===== Starting Run 4  =====
+2025-05-09 02:35:30,527 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 02:36:10,537 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 02:36:11,546 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 02:36:11,547 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 02:36:11,547 - INFO - ⌨️ Pressing key: esc (2 times)
+2025-05-09 02:36:13,671 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 02:36:13,786 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 02:36:13,788 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 02:36:13,788 - INFO - ✅ Main screen detected
+2025-05-09 02:36:13,788 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 02:36:13,788 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 02:36:13,788 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 02:36:13,899 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 02:36:13,900 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 02:36:15,000 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 02:36:15,001 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 02:36:15,115 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:36:15,117 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 02:36:15,118 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 02:36:15,232 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 02:36:15,234 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 02:36:16,340 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 02:36:16,341 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 02:36:16,468 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:36:16,470 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 02:36:16,470 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 02:36:16,590 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 02:36:16,591 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 02:36:17,686 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 02:36:17,687 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 02:36:17,800 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:36:17,803 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 02:36:17,803 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 02:36:17,915 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 02:36:17,917 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 02:36:19,010 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 02:36:19,010 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 02:36:19,108 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:36:20,208 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 02:36:21,323 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:36:22,447 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:36:23,583 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:36:24,729 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:36:25,853 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 02:36:26,969 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.74)
+2025-05-09 02:36:28,098 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 02:36:29,225 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.71)
+2025-05-09 02:36:30,343 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:36:31,461 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 02:36:32,598 - INFO - ✅ Match found for benchmark_first_frame.png at (1085, 529) with confidence 0.89
+2025-05-09 02:36:32,601 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 02:36:32,601 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 02:36:32,601 - INFO - 📥 [Run 4] Capturing benchmark results...
+2025-05-09 02:36:32,601 - INFO - 📥 [Run 4] Timed collection: sleeping for 103.50s + 7s buffer...
+2025-05-09 02:38:23,161 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run4_20250509_023823.png
+2025-05-09 02:38:23,162 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 02:38:33,169 - INFO - 🗙 Toggling console off...
+2025-05-09 02:38:33,170 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 02:38:34,396 - INFO - 🔋 Clicking the power icon...
+2025-05-09 02:38:37,398 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 02:38:37,519 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:38:37,521 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 02:38:37,522 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 02:38:37,629 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 02:38:37,631 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 02:38:40,735 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 02:38:40,736 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 02:38:40,842 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:38:40,844 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 02:38:40,844 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 02:38:40,949 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 02:38:40,951 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 02:38:42,042 - INFO - ✅ CS2 exited
+2025-05-09 02:38:47,254 - INFO - ✅ Results saved to: results\730_run4_20250509_023632.json
+2025-05-09 02:38:47,255 - INFO - ✅ All 4 runs completed for Counter-Strike 2.
+
+2025-05-09 03:26:09,663 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 03:26:10,182 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 03:26:10,182 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 03:26:10,183 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 03:26:10,183 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 03:26:10,184 - INFO - 📦 ======= Starting Counter-Strike 2 Benchmark Series ========
+2025-05-09 03:26:10,184 - INFO - 📌 Config -> Total Runs: 2, Cooldown: 120s
+2025-05-09 03:26:10,184 - INFO - 
+⏱️ ===== Starting Run 0 (Duration Measurement) =====
+2025-05-09 03:26:10,184 - INFO - 📊 ===== Starting Run 0 (Dry Run) =====
+2025-05-09 03:26:10,184 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 03:26:50,189 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 03:26:51,196 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 03:26:51,196 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 03:26:51,197 - INFO - ⌨️ Pressing key: esc (3 times)
+2025-05-09 03:26:54,326 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 03:26:54,465 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.97
+2025-05-09 03:26:54,467 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 03:26:54,467 - INFO - ✅ Main screen detected
+2025-05-09 03:26:54,467 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 03:26:54,467 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 03:26:54,467 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 03:26:54,578 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.97
+2025-05-09 03:26:54,580 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 03:26:55,679 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 03:26:55,680 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 03:26:55,801 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:26:55,803 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 03:26:55,803 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 03:26:55,923 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:26:55,925 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 03:26:57,017 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 03:26:57,018 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 03:26:57,140 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:26:57,142 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 03:26:57,142 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 03:26:57,269 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:26:57,271 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 03:26:58,369 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 03:26:58,370 - INFO - ⏳ Waiting for go_button.png (timeout: 20s)...
+2025-05-09 03:26:58,479 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:26:58,481 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 03:26:58,482 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 03:26:58,594 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:26:58,595 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 03:26:59,692 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 03:26:59,693 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 30s)...
+2025-05-09 03:26:59,796 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:27:00,900 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:27:02,024 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:27:03,150 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:27:04,281 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:27:05,486 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:27:06,657 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:27:07,780 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.75)
+2025-05-09 03:27:08,906 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:27:10,028 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:27:11,143 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:27:12,265 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:27:13,408 - INFO - ✅ Match found for benchmark_first_frame.png at (1078, 522) with confidence 0.90
+2025-05-09 03:27:13,411 - INFO - ✅ Found benchmark_first_frame.png after 13.7s
+2025-05-09 03:27:13,411 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 03:27:13,411 - INFO - 📥 [Run 0] Capturing benchmark results...
+2025-05-09 03:27:13,412 - ERROR - ❌ Error during benchmark run 0: BenchmarkResult.__init__() got an unexpected keyword argument 'game_name'
+2025-05-09 03:27:13,413 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\core\benchmark.py", line 194, in execute_benchmark_run
+    result = self.collect_results(run_id)
+  File "C:\Katana\katana\games\cs2\benchmark.py", line 149, in collect_results
+    result = BenchmarkResult(self.game_id, run_id, game_name=self.game_name)
+TypeError: BenchmarkResult.__init__() got an unexpected keyword argument 'game_name'
+
+2025-05-09 03:27:13,413 - ERROR - ❌ Failed to determine benchmark duration in dry run
+2025-05-09 03:34:58,630 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 03:34:58,826 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 03:34:58,827 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 03:34:58,827 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 03:34:58,827 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 03:34:58,828 - INFO - 📦 ======= Starting Counter-Strike 2 Benchmark Series ========
+2025-05-09 03:34:58,828 - INFO - 📌 Config -> Total Runs: 2, Cooldown: 120s
+2025-05-09 03:34:58,828 - INFO - 
+⏱️ ===== Starting Run 0 (Duration Measurement) =====
+2025-05-09 03:34:58,828 - INFO - 📊 ===== Starting Run 0 (Dry Run) =====
+2025-05-09 03:34:58,828 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 03:35:38,837 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 03:35:39,847 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 03:35:39,849 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 03:35:39,849 - INFO - ⌨️ Pressing key: esc (3 times)
+2025-05-09 03:35:42,978 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 03:35:43,120 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 03:35:43,122 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 03:35:43,122 - INFO - ✅ Main screen detected
+2025-05-09 03:35:43,123 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 03:35:43,123 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 03:35:43,123 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 03:35:43,229 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 03:35:43,231 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 03:35:44,334 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 03:35:44,335 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 03:35:44,463 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:35:44,466 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 03:35:44,466 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 03:35:44,586 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:35:44,588 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 03:35:45,688 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 03:35:45,689 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 03:35:45,820 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:35:45,822 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 03:35:45,822 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 03:35:45,946 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:35:45,948 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 03:35:47,040 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 03:35:47,041 - INFO - ⏳ Waiting for go_button.png (timeout: 20s)...
+2025-05-09 03:35:47,159 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:35:47,161 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 03:35:47,161 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 03:35:47,276 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:35:47,279 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 03:35:48,380 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 03:35:48,381 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 30s)...
+2025-05-09 03:35:48,482 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:35:49,591 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:35:50,706 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:35:51,840 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:35:52,967 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:35:54,133 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:35:55,253 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:35:56,384 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.75)
+2025-05-09 03:35:57,514 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:35:58,633 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:35:59,761 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:36:00,881 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:36:02,012 - INFO - ✅ Match found for benchmark_first_frame.png at (1082, 526) with confidence 0.89
+2025-05-09 03:36:02,015 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 03:36:02,015 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 03:36:02,016 - INFO - 📥 [Run 0] Capturing benchmark results...
+2025-05-09 03:36:02,016 - INFO - ⏳ Waiting for benchmark_end_screen.png (timeout: 124s)...
+2025-05-09 03:36:02,150 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 03:36:05,299 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 03:36:08,439 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 03:36:11,563 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.55)
+2025-05-09 03:36:14,717 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:36:17,873 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 03:36:20,987 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.46)
+2025-05-09 03:36:24,115 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.66)
+2025-05-09 03:36:27,257 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:36:30,397 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 03:36:33,528 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:36:36,668 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.30)
+2025-05-09 03:36:39,805 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.40)
+2025-05-09 03:36:42,949 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.70)
+2025-05-09 03:36:46,094 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 03:36:49,243 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 03:36:52,381 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 03:36:55,518 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:36:58,648 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 03:37:01,776 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.73)
+2025-05-09 03:37:04,910 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.69)
+2025-05-09 03:37:08,052 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:37:11,192 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 03:37:14,324 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.40)
+2025-05-09 03:37:17,449 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 03:37:20,583 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:37:23,720 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 03:37:26,880 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.72)
+2025-05-09 03:37:30,009 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:37:33,156 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 03:37:36,293 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 03:37:39,446 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 03:37:42,588 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 03:37:45,727 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.75)
+2025-05-09 03:37:48,871 - INFO - ✅ Match found for benchmark_end_screen.png at (1414, 567) with confidence 0.95
+2025-05-09 03:37:48,876 - INFO - ✅ Found benchmark_end_screen.png after 106.9s
+2025-05-09 03:37:48,876 - INFO - ⏱️ [Run 0] Benchmark duration: 106.86 seconds
+2025-05-09 03:38:01,030 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run0_20250509_033800.png
+2025-05-09 03:38:01,032 - INFO - ⏱️ Measured benchmark duration: 106.86 seconds
+2025-05-09 03:38:01,032 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 03:38:11,036 - INFO - 🗙 Toggling console off...
+2025-05-09 03:38:11,037 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 03:38:12,265 - INFO - 🔋 Clicking the power icon...
+2025-05-09 03:38:15,273 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 03:38:15,382 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 03:38:15,386 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 03:38:15,386 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 03:38:15,496 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 03:38:15,498 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 03:38:18,604 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 03:38:18,605 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 03:38:18,713 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 03:38:18,716 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 03:38:18,716 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 03:38:18,824 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 03:38:18,827 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 03:38:19,925 - INFO - ✅ CS2 exited
+2025-05-09 03:38:25,003 - INFO - ✅ Results saved to: results\cs2_run0_20250509_033602.json
+2025-05-09 03:38:25,004 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 03:40:25,012 - INFO - 📊 ===== Starting Run 1  =====
+2025-05-09 03:40:25,016 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 03:41:05,027 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 03:41:06,037 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 03:41:06,038 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 03:41:06,038 - INFO - ⌨️ Pressing key: esc (3 times)
+2025-05-09 03:41:09,169 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 03:41:09,283 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.97
+2025-05-09 03:41:09,286 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 03:41:09,286 - INFO - ✅ Main screen detected
+2025-05-09 03:41:09,286 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 03:41:09,286 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 03:41:09,286 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 03:41:09,396 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.97
+2025-05-09 03:41:09,398 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 03:41:10,489 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 03:41:10,490 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 03:41:10,609 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:41:10,611 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 03:41:10,611 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 03:41:10,728 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:41:10,730 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 03:41:11,822 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 03:41:11,823 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 03:41:11,945 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:41:11,948 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 03:41:11,948 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 03:41:12,070 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:41:12,071 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 03:41:13,174 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 03:41:13,174 - INFO - ⏳ Waiting for go_button.png (timeout: 20s)...
+2025-05-09 03:41:13,284 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:41:13,287 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 03:41:13,287 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 03:41:13,396 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:41:13,399 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 03:41:14,496 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 03:41:14,497 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 30s)...
+2025-05-09 03:41:14,591 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:41:15,697 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:41:16,810 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:41:17,939 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:41:19,071 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:41:20,183 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:41:21,312 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:41:22,434 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:41:23,562 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:41:24,681 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:41:25,809 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:41:26,924 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:41:28,062 - INFO - ✅ Match found for benchmark_first_frame.png at (1088, 533) with confidence 0.89
+2025-05-09 03:41:28,065 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 03:41:28,065 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 03:41:28,065 - INFO - 📥 [Run 1] Capturing benchmark results...
+2025-05-09 03:41:28,065 - INFO - 📥 [Run 1] Timed collection: sleeping for 106.86s + 7s buffer...
+2025-05-09 03:43:27,058 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run1_20250509_034326.png
+2025-05-09 03:43:27,060 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 03:43:37,069 - INFO - 🗙 Toggling console off...
+2025-05-09 03:43:37,070 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 03:43:38,298 - INFO - 🔋 Clicking the power icon...
+2025-05-09 03:43:41,302 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 03:43:41,412 - INFO - ✅ Match found for power_button.png at (218, 64) with confidence 1.00
+2025-05-09 03:43:41,415 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 03:43:41,415 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 03:43:41,525 - INFO - ✅ Match found for power_button.png at (218, 64) with confidence 1.00
+2025-05-09 03:43:41,527 - INFO - 🖱️ Clicking at (218, 64) with left button
+2025-05-09 03:43:44,636 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 03:43:44,637 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 03:43:44,748 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 03:43:44,751 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 03:43:44,751 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 03:43:44,857 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 03:43:44,859 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 03:43:45,957 - INFO - ✅ CS2 exited
+2025-05-09 03:43:51,220 - INFO - ✅ Results saved to: results\cs2_run1_20250509_034128.json
+2025-05-09 03:43:51,222 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 03:45:51,225 - INFO - 📊 ===== Starting Run 2  =====
+2025-05-09 03:45:51,229 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 03:46:31,241 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 03:46:32,251 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 03:46:32,252 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 03:46:32,252 - INFO - ⌨️ Pressing key: esc (3 times)
+2025-05-09 03:46:35,377 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 03:46:35,492 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.97
+2025-05-09 03:46:35,494 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 03:46:35,494 - INFO - ✅ Main screen detected
+2025-05-09 03:46:35,494 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 03:46:35,494 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 03:46:35,494 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 03:46:35,604 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.97
+2025-05-09 03:46:35,607 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 03:46:36,700 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 03:46:36,701 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 03:46:36,824 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:46:36,826 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 03:46:36,827 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 03:46:36,945 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 03:46:36,948 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 03:46:38,041 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 03:46:38,043 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 03:46:38,164 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:46:38,166 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 03:46:38,166 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 03:46:38,288 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 03:46:38,290 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 03:46:39,389 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 03:46:39,390 - INFO - ⏳ Waiting for go_button.png (timeout: 20s)...
+2025-05-09 03:46:39,498 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:46:39,500 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 03:46:39,501 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 03:46:39,610 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 03:46:39,613 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 03:46:40,711 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 03:46:40,712 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 30s)...
+2025-05-09 03:46:40,811 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:46:41,917 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 03:46:43,048 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:46:44,180 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:46:45,302 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:46:46,419 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:46:47,542 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 03:46:48,674 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.75)
+2025-05-09 03:46:49,794 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:46:50,911 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 03:46:52,026 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:46:53,146 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 03:46:54,278 - INFO - ✅ Match found for benchmark_first_frame.png at (1082, 526) with confidence 0.89
+2025-05-09 03:46:54,282 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 03:46:54,283 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 03:46:54,283 - INFO - 📥 [Run 2] Capturing benchmark results...
+2025-05-09 03:46:54,283 - INFO - 📥 [Run 2] Timed collection: sleeping for 106.86s + 7s buffer...
+2025-05-09 03:48:53,278 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run2_20250509_034853.png
+2025-05-09 03:48:53,280 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 03:49:03,295 - INFO - 🗙 Toggling console off...
+2025-05-09 03:49:03,296 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 03:49:04,520 - INFO - 🔋 Clicking the power icon...
+2025-05-09 03:49:07,524 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 03:49:07,637 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 03:49:07,639 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 03:49:07,639 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 03:49:07,746 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 03:49:07,749 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 03:49:10,865 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 03:49:10,866 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 03:49:10,977 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 03:49:10,980 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 03:49:10,980 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 03:49:11,086 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 03:49:11,089 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 03:49:12,202 - INFO - ✅ CS2 exited
+2025-05-09 03:49:17,285 - INFO - ✅ Results saved to: results\cs2_run2_20250509_034654.json
+2025-05-09 03:49:17,287 - INFO - ✅ All 2 runs completed for Counter-Strike 2.
+
+2025-05-09 10:31:00,431 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 10:31:00,677 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 10:31:00,678 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 10:31:00,678 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 10:31:00,678 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 10:31:00,679 - ERROR - ❌ Error during benchmark execution: 'CS2Benchmark' object has no attribute 'run_benchmark_series'
+2025-05-09 10:31:00,679 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\main.py", line 184, in main
+    results = benchmark.run_benchmark_series(run_count=runs, cooldown=cooldown)
+AttributeError: 'CS2Benchmark' object has no attribute 'run_benchmark_series'
+
+2025-05-09 11:36:24,801 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 11:36:24,945 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 11:36:24,945 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 11:36:24,945 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 11:36:24,945 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 11:36:24,946 - ERROR - ❌ Error during benchmark execution: 'CS2Benchmark' object has no attribute 'run_benchmark_series'
+2025-05-09 11:36:24,946 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\main.py", line 184, in main
+    results = benchmark.run_benchmark_series(run_count=runs, cooldown=cooldown)
+AttributeError: 'CS2Benchmark' object has no attribute 'run_benchmark_series'
+
+2025-05-09 11:40:43,015 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 11:40:43,159 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 11:40:43,159 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 11:40:43,160 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 11:40:43,160 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 11:40:43,160 - ERROR - ❌ Error during benchmark execution: 'CS2Benchmark' object has no attribute 'run_benchmark_series'
+2025-05-09 11:40:43,161 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\main.py", line 184, in main
+    results = benchmark.run_benchmark_series(run_count=runs, cooldown=cooldown)
+AttributeError: 'CS2Benchmark' object has no attribute 'run_benchmark_series'
+
+2025-05-09 11:42:57,087 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 11:42:57,238 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 11:42:57,238 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 11:42:57,239 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 11:42:57,239 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 11:42:57,239 - INFO - 📦 ======= Starting Counter-Strike 2 Benchmark Series ========
+2025-05-09 11:42:57,240 - INFO - 📌 Config -> Total Runs: 4, Cooldown: 120s
+2025-05-09 11:42:57,240 - INFO - 
+⏱️ ===== Starting Run 0 (Duration Measurement) =====
+2025-05-09 11:42:57,240 - ERROR - ❌ Error during benchmark execution: 'CS2Benchmark' object has no attribute 'execute_benchmark_run'
+2025-05-09 11:42:57,240 - ERROR - Traceback (most recent call last):
+  File "C:\Katana\katana\main.py", line 184, in main
+    results = benchmark.run_benchmark_series(run_count=runs, cooldown=cooldown)
+  File "C:\Katana\katana\games\cs2\benchmark.py", line 59, in run_benchmark_series
+    dry_run_result = self.execute_benchmark_run(run_id=0, is_dry_run=True)
+AttributeError: 'CS2Benchmark' object has no attribute 'execute_benchmark_run'
+
+2025-05-09 11:43:23,404 - INFO - 🔍 Loading benchmark module: katana.games.cs2.benchmark
+2025-05-09 11:43:23,548 - INFO - ✅ Found benchmark class: CS2Benchmark
+2025-05-09 11:43:23,548 - INFO - 🚀 Creating benchmark instance for cs2
+2025-05-09 11:43:23,549 - INFO - 🎮 Initialized Counter-Strike 2 benchmark
+2025-05-09 11:43:23,549 - INFO - ✅ All required assets found in C:\Katana\katana\games\cs2\assets
+2025-05-09 11:43:23,549 - INFO - 📦 ======= Starting Counter-Strike 2 Benchmark Series ========
+2025-05-09 11:43:23,549 - INFO - 📌 Config -> Total Runs: 4, Cooldown: 120s
+2025-05-09 11:43:23,549 - INFO - 
+⏱️ ===== Starting Run 0 (Duration Measurement) =====
+2025-05-09 11:43:23,550 - INFO - 📊 ===== Starting Run 0 (Dry Run) =====
+2025-05-09 11:43:23,550 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 11:44:03,562 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 11:44:04,571 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 11:44:04,571 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 11:44:04,571 - INFO - ⌨️ Pressing key: esc (3 times)
+2025-05-09 11:44:07,710 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 11:44:07,843 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 11:44:07,845 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 11:44:07,845 - INFO - ✅ Main screen detected
+2025-05-09 11:44:07,845 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 11:44:07,845 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 11:44:07,846 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 11:44:07,955 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 11:44:07,956 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 11:44:09,045 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 11:44:09,045 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 11:44:09,171 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 11:44:09,172 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 11:44:09,172 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 11:44:09,297 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 11:44:09,299 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 11:44:10,407 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 11:44:10,407 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 11:44:10,545 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 11:44:10,546 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 11:44:10,546 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 11:44:10,671 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 11:44:10,672 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 11:44:11,763 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 11:44:11,763 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 11:44:11,875 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 11:44:11,877 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 11:44:11,877 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 11:44:11,987 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 11:44:11,989 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 11:44:13,083 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 11:44:13,083 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 11:44:13,183 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 11:44:14,286 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 11:44:15,417 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:44:16,542 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:44:17,672 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:44:18,902 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:44:20,044 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:44:21,169 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:44:22,289 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 11:44:23,405 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 11:44:24,537 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 11:44:25,650 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 11:44:26,794 - INFO - ✅ Match found for benchmark_first_frame.png at (1091, 528) with confidence 0.89
+2025-05-09 11:44:26,795 - INFO - ✅ Found benchmark_first_frame.png after 13.7s
+2025-05-09 11:44:26,795 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 11:44:26,795 - INFO - 📥 [Run 0] Capturing benchmark results...
+2025-05-09 11:44:26,796 - INFO - ⏳ Waiting for benchmark_end_screen.png (timeout: 124s)...
+2025-05-09 11:44:26,932 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 11:44:30,095 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.67)
+2025-05-09 11:44:33,238 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.69)
+2025-05-09 11:44:36,364 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.55)
+2025-05-09 11:44:39,513 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.66)
+2025-05-09 11:44:42,663 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 11:44:45,781 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.46)
+2025-05-09 11:44:48,917 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.65)
+2025-05-09 11:44:52,047 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:44:55,184 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 11:44:58,307 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.63)
+2025-05-09 11:45:01,439 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.31)
+2025-05-09 11:45:04,575 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.40)
+2025-05-09 11:45:07,703 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.73)
+2025-05-09 11:45:10,851 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 11:45:13,986 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:45:17,118 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:45:20,259 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.61)
+2025-05-09 11:45:23,381 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:45:26,527 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.72)
+2025-05-09 11:45:29,656 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.70)
+2025-05-09 11:45:32,787 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:45:35,927 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 11:45:39,049 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.40)
+2025-05-09 11:45:42,175 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:45:45,317 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.62)
+2025-05-09 11:45:48,464 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 11:45:51,628 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.72)
+2025-05-09 11:45:54,765 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:45:57,906 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.68)
+2025-05-09 11:46:01,045 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.60)
+2025-05-09 11:46:04,178 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.64)
+2025-05-09 11:46:07,310 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.61)
+2025-05-09 11:46:10,453 - WARNING - ⚠️ No match found for benchmark_end_screen.png (max confidence 0.75)
+2025-05-09 11:46:13,590 - INFO - ✅ Match found for benchmark_end_screen.png at (1413, 567) with confidence 0.92
+2025-05-09 11:46:13,592 - INFO - ✅ Found benchmark_end_screen.png after 106.8s
+2025-05-09 11:46:13,592 - INFO - ⏱️ [Run 0] Benchmark duration: 106.80 seconds
+2025-05-09 11:46:25,738 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run0_20250509_114625.png
+2025-05-09 11:46:25,738 - INFO - ⏱️ Measured benchmark duration: 106.80 seconds
+2025-05-09 11:46:25,738 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 11:46:35,754 - INFO - 🗙 Toggling console off...
+2025-05-09 11:46:35,754 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 11:46:36,981 - INFO - 🔋 Clicking the power icon...
+2025-05-09 11:46:39,986 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 11:46:40,097 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 11:46:40,099 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 11:46:40,099 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 11:46:40,212 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 11:46:40,214 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 11:46:43,319 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 11:46:43,319 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 11:46:43,432 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 11:46:43,434 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 11:46:43,434 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 11:46:43,545 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 11:46:43,546 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 11:46:44,637 - INFO - ✅ CS2 exited
+2025-05-09 11:46:49,645 - INFO - ✅ Results saved to: results\730_run0_20250509_114426.json
+2025-05-09 11:46:49,645 - INFO - 🧊 Cooling down for 120 seconds...
+
+2025-05-09 11:48:49,657 - INFO - 📊 ===== Starting Run 1  =====
+2025-05-09 11:48:49,659 - INFO - 🚀 Launching Counter-Strike 2 via Steam (ID: 730)...
+2025-05-09 11:49:29,680 - INFO - 🪟 Trying to focus window: 'Counter-Strike 2'
+2025-05-09 11:49:30,684 - INFO - ✅ Window 'Counter-Strike 2' is now active
+2025-05-09 11:49:30,684 - INFO - ⏳ Waiting for CS2 main screen to appear...
+2025-05-09 11:49:30,684 - INFO - ⌨️ Pressing key: esc (3 times)
+2025-05-09 11:49:33,799 - INFO - ⏳ Waiting for play_tab.png (timeout: 30s)...
+2025-05-09 11:49:33,912 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.99
+2025-05-09 11:49:33,913 - INFO - ✅ Found play_tab.png after 0.1s
+2025-05-09 11:49:33,913 - INFO - ✅ Main screen detected
+2025-05-09 11:49:33,914 - INFO - 🧭 Navigating to CS2 benchmark map...
+2025-05-09 11:49:33,914 - INFO - 🧭 [Step 1] Clicking PLAY tab
+2025-05-09 11:49:33,914 - INFO - 🖱️ Searching and clicking: play_tab.png
+2025-05-09 11:49:34,025 - INFO - ✅ Match found for play_tab.png at (985, 33) with confidence 0.98
+2025-05-09 11:49:34,026 - INFO - 🖱️ Clicking at (985, 33) with left button
+2025-05-09 11:49:35,121 - INFO - 🧱 [Step 2] Looking for Workshop Maps tab
+2025-05-09 11:49:35,121 - INFO - ⏳ Waiting for workshop_tab.png (timeout: 20s)...
+2025-05-09 11:49:35,239 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 11:49:35,240 - INFO - ✅ Found workshop_tab.png after 0.1s
+2025-05-09 11:49:35,240 - INFO - 🖱️ Searching and clicking: workshop_tab.png
+2025-05-09 11:49:35,355 - INFO - ✅ Match found for workshop_tab.png at (1033, 87) with confidence 1.00
+2025-05-09 11:49:35,356 - INFO - 🖱️ Clicking at (1033, 87) with left button
+2025-05-09 11:49:36,459 - INFO - 🗺️ [Step 3] Selecting CS2 FPS Benchmark map
+2025-05-09 11:49:36,459 - INFO - ⏳ Waiting for cs2_fps_benchmark.png (timeout: 20s)...
+2025-05-09 11:49:36,581 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 11:49:36,582 - INFO - ✅ Found cs2_fps_benchmark.png after 0.1s
+2025-05-09 11:49:36,582 - INFO - 🖱️ Searching and clicking: cs2_fps_benchmark.png
+2025-05-09 11:49:36,709 - INFO - ✅ Match found for cs2_fps_benchmark.png at (356, 269) with confidence 1.00
+2025-05-09 11:49:36,710 - INFO - 🖱️ Clicking at (356, 269) with left button
+2025-05-09 11:49:37,823 - INFO - 🎯 Starting benchmark execution...
+2025-05-09 11:49:37,823 - INFO - ⏳ Waiting for go_button.png (timeout: 15s)...
+2025-05-09 11:49:37,945 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 11:49:37,946 - INFO - ✅ Found go_button.png after 0.1s
+2025-05-09 11:49:37,947 - INFO - 🖱️ Searching and clicking: go_button.png
+2025-05-09 11:49:38,062 - INFO - ✅ Match found for go_button.png at (1686, 1031) with confidence 1.00
+2025-05-09 11:49:38,063 - INFO - 🖱️ Clicking at (1686, 1031) with left button
+2025-05-09 11:49:39,163 - INFO - 🧠 Waiting for benchmark to visually begin...
+2025-05-09 11:49:39,163 - INFO - ⏳ Waiting for benchmark_first_frame.png (timeout: 20s)...
+2025-05-09 11:49:39,269 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 11:49:40,375 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 11:49:41,503 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:49:42,628 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:49:43,756 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:49:44,862 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:49:46,000 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.76)
+2025-05-09 11:49:47,136 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 11:49:48,266 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.70)
+2025-05-09 11:49:49,392 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.72)
+2025-05-09 11:49:50,519 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 11:49:51,640 - WARNING - ⚠️ No match found for benchmark_first_frame.png (max confidence 0.73)
+2025-05-09 11:49:52,777 - INFO - ✅ Match found for benchmark_first_frame.png at (1093, 532) with confidence 0.88
+2025-05-09 11:49:52,778 - INFO - ✅ Found benchmark_first_frame.png after 13.6s
+2025-05-09 11:49:52,778 - INFO - ✅ Visual benchmark start confirmed
+2025-05-09 11:49:52,779 - INFO - 📥 [Run 1] Capturing benchmark results...
+2025-05-09 11:49:52,779 - INFO - 📥 [Run 1] Timed collection: sleeping for 106.80s + 7s buffer...
+2025-05-09 11:51:51,718 - INFO - 📸 Screenshot saved to: results\screenshots\cs2_benchmark_result_run1_20250509_115151.png
+2025-05-09 11:51:51,719 - INFO - 🧹 Initiating CS2 shutdown sequence...
+2025-05-09 11:52:01,732 - INFO - 🗙 Toggling console off...
+2025-05-09 11:52:01,732 - INFO - ⌨️ Pressing key: ` (1 times)
+2025-05-09 11:52:02,961 - INFO - 🔋 Clicking the power icon...
+2025-05-09 11:52:05,967 - INFO - ⏳ Waiting for power_button.png (timeout: 10s)...
+2025-05-09 11:52:06,082 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 11:52:06,084 - INFO - ✅ Found power_button.png after 0.1s
+2025-05-09 11:52:06,084 - INFO - 🖱️ Searching and clicking: power_button.png
+2025-05-09 11:52:06,196 - INFO - ✅ Match found for power_button.png at (218, 32) with confidence 1.00
+2025-05-09 11:52:06,197 - INFO - 🖱️ Clicking at (218, 32) with left button
+2025-05-09 11:52:09,292 - INFO - 🚪 Clicking Quit to exit CS2...
+2025-05-09 11:52:09,292 - INFO - ⏳ Waiting for quit_button.png (timeout: 10s)...
+2025-05-09 11:52:09,409 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 11:52:09,410 - INFO - ✅ Found quit_button.png after 0.1s
+2025-05-09 11:52:09,411 - INFO - 🖱️ Searching and clicking: quit_button.png
+2025-05-09 11:52:09,518 - INFO - ✅ Match found for quit_button.png at (1067, 605) with confidence 1.00
+2025-05-09 11:52:09,519 - INFO - 🖱️ Clicking at (1067, 605) with left button
+2025-05-09 11:52:10,622 - INFO - ✅ CS2 exited
+2025-05-09 11:52:15,627 - INFO - ✅ Results saved to: results\730_run1_20250509_114952.json
+2025-05-09 11:52:15,628 - INFO - 🧊 Cooling down for 120 seconds...
+

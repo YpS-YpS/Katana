@@ -1,0 +1,8 @@
+opencv-python>=4.5.0
+numpy>=1.20.0
+pyautogui>=0.9.50
+pygetwindow>=0.0.9
+colorama>=0.4.4
+pillow>=8.0.0
+pyscreeze>=0.1.27
+psutil>=5.8.0
