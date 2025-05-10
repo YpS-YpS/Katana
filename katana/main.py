@@ -8,16 +8,18 @@ import sys
 import time
 import argparse
 import logging
+import json
 from pathlib import Path
 from colorama import init, Fore, Style
 
 from .factory import GameFactory
+from .core.presets import PresetManager
+from .games.cs2.presets import CS2PresetAdapter
 
 # Initialize colorama for colored terminal output
 init(autoreset=True)
 
 # Configure logger
-# Find the logging configuration section in katana/main.py
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -29,8 +31,8 @@ logging.basicConfig(
 
 logger = logging.getLogger("katana")
 
-def print_banner():
-    """Print the Katana framework banner"""
+def print_banner_and_usage():
+    """Print the Katana framework banner and usage information"""
     print(Fore.GREEN + Style.BRIGHT + """
  ██╗  ██╗ █████╗ ████████╗ █████╗ ███╗   ██╗ █████╗ 
  ██║ ██╔╝██╔══██╗╚══██╔══╝██╔══██╗████╗  ██║██╔══██╗
@@ -41,6 +43,32 @@ def print_banner():
                                                      
  Game Benchmark Automation Framework
     """)
+    
+    print(Fore.CYAN + """
+        ╔═══════════════════════════════════════════════════════════════════════════╗
+        ║                            USAGE INFORMATION                              ║
+        ╠═══════════════════════════════════════════════════════════════════════════╣
+        ║                                                                           ║
+        ║  List available games:                                                    ║
+        ║  python -m katana.main --list                                             ║
+        ║                                                                           ║
+        ║  List graphics presets for a game:                                        ║
+        ║  python -m katana.main --game cs2 --list-presets                          ║
+        ║                                                                           ║
+        ║  Run a benchmark with default settings:                                   ║
+        ║  python -m katana.main --game cs2                                         ║
+        ║                                                                           ║
+        ║  Run with a specific preset:                                              ║
+        ║  python -m katana.main --game cs2 --preset 1080p_high                     ║
+        ║                                                                           ║
+        ║  Customize benchmark parameters:                                          ║
+        ║  python -m katana.main --game cs2 --runs 5 --cooldown 60 --preset 4k_high ║
+        ║                                                                           ║
+        ║  For more information:                                                    ║
+        ║  python -m katana.main --help                                             ║
+        ║                                                                           ║
+        ╚═══════════════════════════════════════════════════════════════════════════╝
+""")
 
 def parse_args():
     """Parse command line arguments
@@ -64,6 +92,12 @@ def parse_args():
     
     parser.add_argument("--list", "-l", action="store_true",
                       help="List available games")
+                      
+    parser.add_argument("--preset", "-p", type=str,
+                      help="Graphics preset to use for benchmarking")
+                      
+    parser.add_argument("--list-presets", action="store_true",
+                      help="List available graphics presets for the selected game")
     
     return parser.parse_args()
 
@@ -123,9 +157,63 @@ def prompt_for_cooldown():
         except ValueError:
             print("❌ Please enter a valid number.")
 
+def prompt_for_preset(game_id, preset_manager):
+    """Prompt user to select a graphics preset
+    
+    Args:
+        game_id (str): Game identifier
+        preset_manager (PresetManager): Preset manager instance
+        
+    Returns:
+        str or None: Selected preset ID, or None if default
+    """
+    presets = preset_manager.get_available_presets(game_id)
+    if not presets:
+        print("❌ No presets available for this game")
+        return None
+    
+    print("\n📊 Available graphics presets:")
+    preset_ids = list(presets.keys())
+    for i, preset_id in enumerate(preset_ids):
+        print(f"  {i+1}. {presets[preset_id]} ({preset_id})")
+    
+    print("  0. Use current settings")
+    
+    while True:
+        try:
+            choice = input("\n🎯 Enter preset number (or 0 for current settings): ").strip()
+            if choice == "0":
+                return None
+            
+            index = int(choice) - 1
+            if 0 <= index < len(preset_ids):
+                return preset_ids[index]
+            else:
+                print(f"❌ Invalid choice. Please enter a number between 0 and {len(preset_ids)}")
+        except ValueError:
+            print("❌ Please enter a valid number")
+
+def get_preset_manager(game_id):
+    """Get a configured preset manager for the specified game
+    
+    Args:
+        game_id (str): Game identifier
+        
+    Returns:
+        PresetManager: Configured preset manager
+    """
+    preset_manager = PresetManager()
+    
+    # Register preset adapters for supported games
+    if game_id.lower() == "cs2":
+        preset_manager.register_adapter("cs2", CS2PresetAdapter())
+    # Add more games here as they are supported
+    
+    return preset_manager
+
 def main():
     """Main entry point"""
-    print_banner()
+    print_banner_and_usage()
     
     # Parse command line arguments
     args = parse_args()
@@ -152,9 +240,35 @@ def main():
     
     print(f"\n🎮 Selected game: {game_id}")
     
+    # Initialize preset manager
+    preset_manager = get_preset_manager(game_id)
+    
+    # List presets if requested
+    if args.list_presets:
+        presets = preset_manager.get_available_presets(game_id)
+        if presets:
+            print(f"\n📊 Available presets for {game_id}:")
+            for preset_id, preset_name in presets.items():
+                print(f"  - {preset_id}: {preset_name}")
+        else:
+            print(f"❌ No presets found for {game_id}")
+        return 0
+    
+    # Choose preset if not specified
+    preset_id = args.preset
+    if preset_id is None:
+        preset_id = prompt_for_preset(game_id, preset_manager)
+    
     try:
         # Create benchmark instance
         benchmark = GameFactory.create_benchmark(game_id)
+        
+        # Apply preset if specified
+        if preset_id:
+            print(f"\n🔧 Applying preset: {preset_id}")
+            success = preset_manager.apply_preset(game_id, preset_id)
+            if not success:
+                print(f"❌ Failed to apply preset '{preset_id}'. Using current settings.")
         
         # Get benchmark parameters
         runs = args.runs
@@ -177,6 +291,8 @@ def main():
         print(f"  - Game: {benchmark.game_name}")
         print(f"  - Runs: {runs}")
         print(f"  - Cooldown: {cooldown}s")
+        if preset_id:
+            print(f"  - Preset: {preset_id}")
         
         print("\n🚀 Starting benchmark series...")
         
