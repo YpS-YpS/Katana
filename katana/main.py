@@ -34,14 +34,14 @@ logger = logging.getLogger("katana")
 def print_banner_and_usage():
     """Print the Katana framework banner and usage information"""
     print(Fore.GREEN + Style.BRIGHT + """
- ██╗  ██╗ █████╗ ████████╗ █████╗ ███╗   ██╗ █████╗ 
- ██║ ██╔╝██╔══██╗╚══██╔══╝██╔══██╗████╗  ██║██╔══██╗
- █████╔╝ ███████║   ██║   ███████║██╔██╗ ██║███████║
- ██╔═██╗ ██╔══██║   ██║   ██╔══██║██║╚██╗██║██╔══██║
- ██║  ██╗██║  ██║   ██║   ██║  ██║██║ ╚████║██║  ██║
- ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+         ██╗  ██╗ █████╗ ████████╗ █████╗ ███╗   ██╗ █████╗ 
+         ██║ ██╔╝██╔══██╗╚══██╔══╝██╔══██╗████╗  ██║██╔══██╗
+         █████╔╝ ███████║   ██║   ███████║██╔██╗ ██║███████║
+         ██╔═██╗ ██╔══██║   ██║   ██╔══██║██║╚██╗██║██╔══██║
+         ██║  ██╗██║  ██║   ██║   ██║  ██║██║ ╚████║██║  ██║
+         ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
                                                      
- Game Benchmark Automation Framework
+               Game Benchmark Automation Framework
     """)
     
     print(Fore.CYAN + """
@@ -56,6 +56,7 @@ def print_banner_and_usage():
         ║  python -m katana.main --game cs2 --list-presets                          ║
         ║                                                                           ║
         ║  Run a benchmark with default settings:                                   ║
+        ║  [1080p_high|4 Runs(1dry+3)| 120secs cooldown]:                           ║
         ║  python -m katana.main --game cs2                                         ║
         ║                                                                           ║
         ║  Run with a specific preset:                                              ║
