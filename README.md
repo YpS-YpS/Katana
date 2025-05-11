@@ -20,6 +20,7 @@ Katana is a modular, extensible framework for automating game benchmarks. It pro
 - PyGetWindow
 - Colorama
 - Numpy
+NEW ADITION
 
 ## Installation
 
