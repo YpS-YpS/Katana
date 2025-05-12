@@ -44,30 +44,34 @@ def print_banner_and_usage():
  Game Benchmark Automation Framework
     """)
     
-    print(Fore.CYAN + """
-        ╔═══════════════════════════════════════════════════════════════════════════╗
-        ║                            USAGE INFORMATION                              ║
-        ╠═══════════════════════════════════════════════════════════════════════════╣
-        ║                                                                           ║
-        ║  List available games:                                                    ║
-        ║  python -m katana.main --list                                             ║
-        ║                                                                           ║
-        ║  List graphics presets for a game:                                        ║
-        ║  python -m katana.main --game cs2 --list-presets                          ║
-        ║                                                                           ║
-        ║  Run a benchmark with default settings:                                   ║
-        ║  python -m katana.main --game cs2                                         ║
-        ║                                                                           ║
-        ║  Run with a specific preset:                                              ║
-        ║  python -m katana.main --game cs2 --preset 1080p_high                     ║
-        ║                                                                           ║
-        ║  Customize benchmark parameters:                                          ║
-        ║  python -m katana.main --game cs2 --runs 5 --cooldown 60 --preset 4k_high ║
-        ║                                                                           ║
-        ║  For more information:                                                    ║
-        ║  python -m katana.main --help                                             ║
-        ║                                                                           ║
-        ╚═══════════════════════════════════════════════════════════════════════════╝
+    print(Fore.CYAN + Style.BRIGHT + """
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                            USAGE INFORMATION                              ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                           ║
+║  List available games:                                                    ║
+║  >> python -m katana.main --list                                          ║
+║                                                                           ║
+║  List graphics presets for a game:                                        ║
+║  >> python -m katana.main --game GAME --list-presets                      ║
+║                                                                           ║
+║  Run a benchmark with default settings:                                   ║
+║  -Preset:1080p_high                                                       ║    
+║  -Runs:4 Runs(1dry run + 3 perf runs)                                     ║
+║  -Cooldown:120 sec cooldown betweeen runs                                 ║
+║                                                                           ║
+║  >> python -m katana.main --game GAME                                     ║
+║                                                                           ║
+║  Run with a specific preset:                                              ║
+║  >> python -m katana.main --game GAME --preset PRESET                     ║
+║                                                                           ║
+║  Customize benchmark parameters:                                          ║
+║  >> python -m katana.main --game GAME --runs RUNS --cooldown COOLDOWN     ║
+║                                                                           ║
+║  For more information:                                                    ║
+║  >> python -m katana.main --help                                          ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 """)
 
 def parse_args():
@@ -169,13 +173,16 @@ def prompt_for_preset(game_id, preset_manager):
     """
     presets = preset_manager.get_available_presets(game_id)
     if not presets:
-        print("❌ No presets available for this game")
+        print("❌ No valid presets available for this game")
         return None
     
     print("\n📊 Available graphics presets:")
     preset_ids = list(presets.keys())
     for i, preset_id in enumerate(preset_ids):
-        print(f"  {i+1}. {presets[preset_id]} ({preset_id})")
+        # Verify this preset file actually exists
+        preset_file = Path(preset_manager.presets_dir) / game_id / f"{preset_id}.json"
+        if preset_file.exists():
+            print(f"  {i+1}. {presets[preset_id]} ({preset_id})")
     
     print("  0. Use current settings")
     
@@ -187,7 +194,13 @@ def prompt_for_preset(game_id, preset_manager):
             
             index = int(choice) - 1
             if 0 <= index < len(preset_ids):
-                return preset_ids[index]
+                preset_id = preset_ids[index]
+                # Final check that the preset file exists
+                preset_file = Path(preset_manager.presets_dir) / game_id / f"{preset_id}.json"
+                if not preset_file.exists():
+                    print(f"❌ Error: Preset file {preset_file} does not exist!")
+                    return None
+                return preset_id
             else:
                 print(f"❌ Invalid choice. Please enter a number between 0 and {len(preset_ids)}")
         except ValueError:
@@ -249,7 +262,10 @@ def main():
         if presets:
             print(f"\n📊 Available presets for {game_id}:")
             for preset_id, preset_name in presets.items():
-                print(f"  - {preset_id}: {preset_name}")
+                # Verify this preset file actually exists
+                preset_file = Path(preset_manager.presets_dir) / game_id / f"{preset_id}.json"
+                if preset_file.exists():
+                    print(f"  - {preset_id}: {preset_name}")
         else:
             print(f"❌ No presets found for {game_id}")
         return 0
@@ -258,17 +274,18 @@ def main():
     preset_id = args.preset
     if preset_id is None:
         preset_id = prompt_for_preset(game_id, preset_manager)
+
+    # Apply preset if specified
+    if preset_id:
+        print(f"\n🔧 Applying preset: {preset_id}")
+        success = preset_manager.apply_preset(game_id, preset_id)
+        if not success:
+            print(f"❌ Failed to apply preset '{preset_id}'. Aborting benchmark.")
+            return 1
     
     try:
         # Create benchmark instance
         benchmark = GameFactory.create_benchmark(game_id)
-        
-        # Apply preset if specified
-        if preset_id:
-            print(f"\n🔧 Applying preset: {preset_id}")
-            success = preset_manager.apply_preset(game_id, preset_id)
-            if not success:
-                print(f"❌ Failed to apply preset '{preset_id}'. Using current settings.")
         
         # Get benchmark parameters
         runs = args.runs

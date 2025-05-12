@@ -55,7 +55,18 @@ class PresetManager:
         try:
             with open(presets_file, "r") as f:
                 presets_data = json.load(f)
-                return presets_data.get("presets", {})
+                presets = presets_data.get("presets", {})
+                
+                # Validate that preset files actually exist
+                valid_presets = {}
+                for preset_id, preset_name in presets.items():
+                    preset_file = game_presets_dir / f"{preset_id}.json"
+                    if preset_file.exists():
+                        valid_presets[preset_id] = preset_name
+                    else:
+                        logger.warning(f"⚠️ Preset file not found for '{preset_id}': {preset_file}")
+                
+                return valid_presets
         except Exception as e:
             logger.error(f"❌ Failed to load presets for {game_id}: {e}")
             return {}
@@ -85,7 +96,7 @@ class PresetManager:
     
     def apply_preset(self, game_id, preset_id, backup=True):
         """Apply a preset to a game
-        
+    
         Args:
             game_id (str): Game identifier
             preset_id (str): Preset identifier
@@ -98,9 +109,25 @@ class PresetManager:
             logger.error(f"❌ No preset adapter registered for {game_id}")
             return False
         
+        # Check if the preset exists
+        preset_file = self.presets_dir / game_id / f"{preset_id}.json"
+        if not preset_file.exists():
+            logger.error(f"❌ Preset file not found: {preset_file}")
+            print(f"❌ Preset '{preset_id}' does not exist. Available presets:")
+            
+            # List available presets
+            presets = self.get_available_presets(game_id)
+            for pid, pname in presets.items():
+                # Verify this preset file actually exists
+                if (self.presets_dir / game_id / f"{pid}.json").exists():
+                    print(f"  - {pid}: {pname}")
+            
+            return False
+        
         # Get preset data
         preset_data = self.get_preset_data(game_id, preset_id)
         if not preset_data:
+            logger.error(f"❌ Failed to load preset data for '{preset_id}'")
             return False
         
         # Apply preset
@@ -115,7 +142,6 @@ class PresetManager:
                 width = preset_data["setting.defaultres"]
                 height = preset_data["setting.defaultresheight"]
                 logger.info(f"📊 Resolution set to: {width}x{height}")
-                
         else:
             logger.error(f"❌ Failed to apply preset '{preset_id}' to {game_id}")
         

@@ -126,6 +126,18 @@ class CS2PresetAdapter(PresetAdapter):
             logger.error(f"❌ CS2 config file not found: {self.config_path}")
             return False
         
+        # Validate preset data
+        if not preset_data:
+            logger.error("❌ Empty preset data")
+            return False
+        
+        # Check for required settings
+        required_settings = ["setting.defaultres", "setting.defaultresheight"]
+        missing_settings = [s for s in required_settings if s not in preset_data]
+        if missing_settings:
+            logger.error(f"❌ Preset is missing required settings: {missing_settings}")
+            return False
+        
         # Backup current config if requested
         if backup:
             backup_path = self.backup_config()
@@ -137,6 +149,9 @@ class CS2PresetAdapter(PresetAdapter):
             # Read current config
             with open(self.config_path, "r") as f:
                 config_content = f.read()
+            
+            # Count settings applied
+            settings_applied = 0
             
             # Update settings
             for key, value in preset_data.items():
@@ -155,19 +170,28 @@ class CS2PresetAdapter(PresetAdapter):
                 replacement = f'"{key}"\t\t"{value}"'
                 
                 if re.search(pattern, config_content):
-                    # Replace existing setting
-                    config_content = re.sub(pattern, replacement, config_content)
+                    # Check if current value is different
+                    current_match = re.search(pattern, config_content)
+                    if current_match and current_match.group(0) != replacement:
+                        # Replace existing setting
+                        config_content = re.sub(pattern, replacement, config_content)
+                        settings_applied += 1
                 else:
                     # Add new setting before the closing brace
                     config_content = config_content.replace("}", f'\t{replacement}\n}}')
+                    settings_applied += 1
             
-            # Write updated config
-            with open(self.config_path, "w") as f:
-                f.write(config_content)
-            
-            logger.info(f"✅ Applied preset to CS2 config: {self.config_path}")
-            return True
-            
+            # Write updated config only if changes were made
+            if settings_applied > 0:
+                with open(self.config_path, "w") as f:
+                    f.write(config_content)
+                
+                logger.info(f"✅ Applied preset to CS2 config: {settings_applied} settings updated")
+                return True
+            else:
+                logger.info("✅ No settings needed to be changed - current config already matches preset")
+                return True  # Return TRUE here instead of FALSE
+                
         except Exception as e:
             logger.error(f"❌ Failed to apply preset: {e}")
             
