@@ -117,6 +117,7 @@ class CS2Benchmark(GameBenchmark):
             self.interactor.click_template("go_button.png")
         else:
             logger.error("❌ GO button not found")
+            exit()
             return False
         
         # Wait for benchmark to visually begin

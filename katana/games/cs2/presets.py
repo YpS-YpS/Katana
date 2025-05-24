@@ -56,22 +56,42 @@ class CS2PresetAdapter(PresetAdapter):
             if not user_dir.is_dir():
                 continue
             
-            # Try the path provided
-            cs2_cfg_path = user_dir / "730" / "local" / "cfg" / "cs2_video.txt"
-            if cs2_cfg_path.exists():
-                return cs2_cfg_path
-            
-            # Also check for other possible filenames
-            alternate_paths = [
+            # Define expected config paths
+            config_paths = [
+                user_dir / "730" / "local" / "cfg" / "cs2_video.txt",
                 user_dir / "730" / "local" / "cfg" / "video.cfg",
                 user_dir / "730" / "local" / "cfg" / "video.txt"
             ]
             
-            for path in alternate_paths:
+            # Check if any exist
+            for path in config_paths:
                 if path.exists():
                     return path
+            
+            # If none exist, return the first path (we'll create it later)
+            config_dir = user_dir / "730" / "local" / "cfg"
+            if config_dir.exists():
+                return config_paths[0]  # Return cs2_video.txt path
         
-        logger.warning("⚠️ Could not find CS2 video settings file automatically")
+        # If no user directories found with CS2 installed, find the first valid user and create the path
+        for user_dir in userdata_path.iterdir():
+            if not user_dir.is_dir():
+                continue
+            
+            # Create the path structure if it doesn't exist
+            config_dir = user_dir / "730" / "local" / "cfg"
+            config_dir.mkdir(parents=True, exist_ok=True)
+            return config_dir / "cs2_video.txt"
+        
+        # Last resort - create in the first user directory
+        logger.warning("⚠️ Creating new CS2 config directory structure")
+        first_user_dir = next(userdata_path.iterdir(), None)
+        if first_user_dir and first_user_dir.is_dir():
+            config_dir = first_user_dir / "730" / "local" / "cfg"
+            config_dir.mkdir(parents=True, exist_ok=True)
+            return config_dir / "cs2_video.txt"
+        
+        logger.error("❌ Could not find a suitable location for CS2 config")
         return None
     
     def _find_steam_path(self):
@@ -112,6 +132,60 @@ class CS2PresetAdapter(PresetAdapter):
             logger.error(f"❌ Error finding Steam path: {e}")
             return None
     
+    def _create_initial_config(self, preset_data):
+        """Create initial configuration file using preset data
+        
+        Args:
+            preset_data (dict): Preset configuration data
+            
+        Returns:
+            bool: True if config was created successfully
+        """
+        # Validate preset data
+        if not preset_data:
+            logger.error("❌ Empty preset data")
+            return False
+        
+        # Create parent directories if they don't exist
+        if self.config_path:
+            self.config_path.parent.mkdir(parents=True, exist_ok=True)
+        else:
+            logger.error("❌ No config path set")
+            return False
+        
+        try:
+            # Create a basic CS2 config structure
+            config_content = '"video.cfg"\n{\n'
+            
+            # Add all settings from the preset
+            for key, value in preset_data.items():
+                # Skip metadata keys
+                if key in ["name", "description"]:
+                    continue
+                
+                # Convert to string representation
+                if isinstance(value, bool):
+                    value = "1" if value else "0"
+                else:
+                    value = str(value)
+                
+                # Add setting
+                config_content += f'\t"{key}"\t\t"{value}"\n'
+            
+            # Close the config structure
+            config_content += '}\n'
+            
+            # Write the config file
+            with open(self.config_path, "w") as f:
+                f.write(config_content)
+            
+            logger.info(f"✅ Created new config file at {self.config_path} with preset settings")
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to create initial config: {e}")
+            return False
+    
     def apply_preset(self, preset_data, backup=True):
         """Apply a preset to the CS2 video settings file
         
@@ -120,11 +194,12 @@ class CS2PresetAdapter(PresetAdapter):
             backup (bool): Whether to backup current settings
             
         Returns:
-            bool: True if preset was applied successfully
+            bool or str: True if preset was applied successfully, "no_changes" if no changes needed
         """
+        # Check if config file exists
         if not self.config_path or not self.config_path.exists():
-            logger.error(f"❌ CS2 config file not found: {self.config_path}")
-            return False
+            logger.warning(f"⚠️ Config file not found: {self.config_path}")
+            return self._create_initial_config(preset_data)
         
         # Validate preset data
         if not preset_data:
@@ -150,14 +225,18 @@ class CS2PresetAdapter(PresetAdapter):
             with open(self.config_path, "r") as f:
                 config_content = f.read()
             
-            # Count settings applied
+            # Count settings applied and already matching
             settings_applied = 0
+            settings_already_match = 0
+            total_settings = 0
             
             # Update settings
             for key, value in preset_data.items():
                 # Skip metadata keys that aren't actual settings
                 if key in ["name", "description"]:
                     continue
+                
+                total_settings += 1
                 
                 # Convert to string representation
                 if isinstance(value, bool):
@@ -166,18 +245,22 @@ class CS2PresetAdapter(PresetAdapter):
                     value = str(value)
                 
                 # Replace or add setting
-                pattern = rf'"{key}"\s+"[^"]*"'
+                pattern = rf'"{key}"\s+"([^"]*)"'
                 replacement = f'"{key}"\t\t"{value}"'
                 
-                if re.search(pattern, config_content):
-                    # Check if current value is different
-                    current_match = re.search(pattern, config_content)
-                    if current_match and current_match.group(0) != replacement:
-                        # Replace existing setting
+                # Check if setting exists and needs to be updated
+                match = re.search(pattern, config_content)
+                if match:
+                    current_value = match.group(1)
+                    if current_value != value:
+                        # Value is different, update it
                         config_content = re.sub(pattern, replacement, config_content)
                         settings_applied += 1
+                    else:
+                        # Value already matches preset
+                        settings_already_match += 1
                 else:
-                    # Add new setting before the closing brace
+                    # Setting doesn't exist, add it
                     config_content = config_content.replace("}", f'\t{replacement}\n}}')
                     settings_applied += 1
             
@@ -186,11 +269,11 @@ class CS2PresetAdapter(PresetAdapter):
                 with open(self.config_path, "w") as f:
                     f.write(config_content)
                 
-                logger.info(f"✅ Applied preset to CS2 config: {settings_applied} settings updated")
+                logger.info(f"✅ Applied preset to CS2 config: {settings_applied} settings updated, {settings_already_match} already matched")
                 return True
             else:
-                logger.info("✅ No settings needed to be changed - current config already matches preset")
-                return True  # Return TRUE here instead of FALSE
+                logger.info(f"✓ All {settings_already_match} settings already match preset - no changes needed")
+                return "no_changes"  # Special return value for no changes needed
                 
         except Exception as e:
             logger.error(f"❌ Failed to apply preset: {e}")
