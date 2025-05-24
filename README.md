@@ -20,12 +20,11 @@ Katana is a modular, extensible framework for automating game benchmarks. It pro
 - PyGetWindow
 - Colorama
 - Numpy
+NEW ADITION
 
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/intel-gaming/katana.git
 cd katana
 
 # Install dependencies
@@ -179,6 +178,3 @@ Benchmark results are saved as JSON files in the `results` directory. Each run g
 
 Screenshots of benchmark results are saved in the `results/screenshots` directory.
 
-## License
-
-Copyright © 2025 Intel Corporation. All rights reserved.
